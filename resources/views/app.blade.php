@@ -280,9 +280,7 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-    @yield('menu')
-    @yield('content')
-
+        @yield('content')
     </div>
 </body>
 </html>
