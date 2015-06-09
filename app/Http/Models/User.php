@@ -1,4 +1,4 @@
-<?php namespace kitchen;
+<?php namespace kitchen\Http\Models;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

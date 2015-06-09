@@ -1,5 +1,7 @@
 <?php namespace kitchen\Http\Controllers;
 
+use kitchen\Http\Models\Merchant;
+
 class MerchantController extends Controller {
 
     /**
@@ -9,7 +11,9 @@ class MerchantController extends Controller {
      */
     public function index()
     {
-        return view('merchant.list');
+        $list = Merchant::get_all();
+        return view('merchant.list')
+            ->with('list', $list);
     }
 
     public function create()
