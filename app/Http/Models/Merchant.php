@@ -12,6 +12,11 @@ class Merchant extends Model {
         return DB::table(self::$_table)->orderBy('created_at', 'desc')->get();
     }
 
+    public static function get_one($merchant_id)
+    {
+        return DB::table(self::$_table)->where('merchant_id', $merchant_id)->first();
+    }
+
     public static function add($data)
     {
         return DB::table(self::$_table)->insertGetId($data);
