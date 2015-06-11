@@ -1,6 +1,7 @@
 <?php namespace kitchen\Http\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Goods extends Model {
 
@@ -9,6 +10,11 @@ class Goods extends Model {
     public static function get_all()
     {
         return DB::table(self::$_table)->orderBy('created_at', 'desc')->get();
+    }
+
+    public static function get_one($goods_id)
+    {
+        return DB::table(self::$_table)->where('goods_id', $goods_id)->first();
     }
 
     public static function add($data)
