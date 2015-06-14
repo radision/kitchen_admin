@@ -15,6 +15,7 @@
                 <th>#</th>
                 <th>Title</th>
                 <th>Desc</th>
+                <th>Shipping</th>
                 <th>Created At</th>
                 <th>Op</th>
             </tr>
@@ -23,6 +24,7 @@
                 <td>{{ $row->merchant_id }}</td>
                 <td>{{ $row->title }}</td>
                 <td>{{ $row->desc }}</td>
+                <td>{{ $row->shipping }}</td>
                 <td>{{ date('Y-m-d H:i:s', $row->created_at) }}</td>
                 <td><a href="/merchant/edit/{{ $row->merchant_id }}" class="btn btn-default">Edit</a></td>
             </tr>

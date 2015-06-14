@@ -26,10 +26,12 @@ class MerchantController extends Controller {
     {
         $title = $request->input('title', '');
         $desc = $request->input('desc', '');
+        $shipping = $request->input('shipping', '');
 
         $data = array(
             'title' => $title,
             'desc' => $desc,
+            'shipping' => $shipping,
             'status' => 1,
             'created_at' => time(),
             'updated_at' => time(),
@@ -50,10 +52,12 @@ class MerchantController extends Controller {
     {
         $title = $request->input('title', '');
         $desc = $request->input('desc', '');
+        $shipping = $request->input('shipping', '');
 
         $data = array(
             'title' => $title,
             'desc' => $desc,
+            'shipping' => $shipping,
             'updated_at' => time(),
         );
         Merchant::change($merchant_id, $data);
