@@ -89,6 +89,14 @@
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="/order"><i class="fa fa-bar-chart-o fa-fw"></i> Order<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="/order">List</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
